@@ -15,6 +15,7 @@
 		CD1DAF801E8DA61E00FC701F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1DAF7E1E8DA61E00FC701F /* LaunchScreen.storyboard */; };
 		CD1DAF881E8DAF8400FC701F /* TipInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DAF871E8DAF8400FC701F /* TipInCellAnimator.swift */; };
 		CDE6CDE41E92C1CD00D3733D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6CDE31E92C1CD00D3733D /* CardView.swift */; };
+		CDE6CDE71E92EFD500D3733D /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE6CDE61E92EFD500D3733D /* DataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		CD1DAF871E8DAF8400FC701F /* TipInCellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipInCellAnimator.swift; sourceTree = "<group>"; };
 		CDE6CDE31E92C1CD00D3733D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CDE6CDE51E92C2CF00D3733D /* VarelaRound-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "VarelaRound-Regular.otf"; path = "../../../../Downloads/varela-round/VarelaRound-Regular.otf"; sourceTree = "<group>"; };
+		CDE6CDE61E92EFD500D3733D /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				CDE6CDE51E92C2CF00D3733D /* VarelaRound-Regular.otf */,
 				CD1DAF771E8DA61E00FC701F /* ViewController.swift */,
 				CD1DAF791E8DA61E00FC701F /* Main.storyboard */,
+				CDE6CDE61E92EFD500D3733D /* DataViewController.swift */,
 				CD1DAF871E8DAF8400FC701F /* TipInCellAnimator.swift */,
 				CD1DAF7C1E8DA61E00FC701F /* Assets.xcassets */,
 				CD1DAF7E1E8DA61E00FC701F /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 			files = (
 				CD1DAF781E8DA61E00FC701F /* ViewController.swift in Sources */,
 				CD1DAF881E8DAF8400FC701F /* TipInCellAnimator.swift in Sources */,
+				CDE6CDE71E92EFD500D3733D /* DataViewController.swift in Sources */,
 				CDE6CDE41E92C1CD00D3733D /* CardView.swift in Sources */,
 				CD1DAF761E8DA61E00FC701F /* AppDelegate.swift in Sources */,
 			);

@@ -1,0 +1,6 @@
+framework module Pods_GDG_VIT_Vellore {
+  umbrella header "Pods-GDG VIT Vellore-umbrella.h"
+
+  export *
+  module * { export * }
+}

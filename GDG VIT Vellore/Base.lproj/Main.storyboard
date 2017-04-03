@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="snj-E9-Dtt">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,7 +24,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2NE-PQ-RDh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yhu-qR-4lF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gdglogo" translatesAutoresizingMaskIntoConstraints="NO" id="lch-WX-rg7">
@@ -74,7 +75,7 @@
                         <viewControllerLayoutGuide type="bottom" id="B9v-e5-ZOx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6iD-L4-8qu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.16078431372549018" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -94,7 +95,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Xmq-L1-51P"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="C6s-jf-azb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.16078431372549018" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -113,7 +114,7 @@
                         <viewControllerLayoutGuide type="bottom" id="227-c3-30K"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D7V-oo-lxG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSs-xj-gmJ">
@@ -153,9 +154,35 @@
                         <viewControllerLayoutGuide type="bottom" id="tLB-3F-FE4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Nl-wG-Q4t">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SIq-Vs-8xL">
+                                <rect key="frame" x="16" y="28" width="343" height="555"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="ryb-31-FpJ">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ryb-31-FpJ" id="LNK-aJ-t3Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Koi-OH-H9e" id="va8-ps-Aah"/>
+                                    <outlet property="delegate" destination="Koi-OH-H9e" id="tNG-hE-D49"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.6705882353" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SIq-Vs-8xL" firstAttribute="leading" secondItem="1Nl-wG-Q4t" secondAttribute="leadingMargin" id="HbI-7y-eyh"/>
+                            <constraint firstItem="SIq-Vs-8xL" firstAttribute="top" secondItem="pe9-pX-cCT" secondAttribute="bottom" constant="8" id="db5-V7-qOz"/>
+                            <constraint firstItem="SIq-Vs-8xL" firstAttribute="trailing" secondItem="1Nl-wG-Q4t" secondAttribute="trailingMargin" id="gSo-qI-EYR"/>
+                            <constraint firstItem="tLB-3F-FE4" firstAttribute="top" secondItem="SIq-Vs-8xL" secondAttribute="bottom" constant="35" id="iPh-cx-hMz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Events" image="events" selectedImage="events" id="MgM-7r-bqG"/>
                 </viewController>

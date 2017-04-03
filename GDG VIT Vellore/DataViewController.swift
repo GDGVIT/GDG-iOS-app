@@ -10,7 +10,25 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class DataViewController: UIViewController {
+class DataViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 1
+        
+    }
+    
+    
+    
+    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+     
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
+        cell.textLabel?.text = "Top row"
+        
+        return cell
+    }
+    
+
 
     @IBOutlet weak var webView: UIWebView!
     

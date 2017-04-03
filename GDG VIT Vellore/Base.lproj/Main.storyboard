@@ -80,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgC-Qc-wBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591" y="776"/>
+            <point key="canvasLocation" x="590.625" y="775.35211267605632"/>
         </scene>
         <!--Members-->
         <scene sceneID="ijQ-QI-nmO">
@@ -104,7 +104,7 @@
         <!--Events-->
         <scene sceneID="rvV-1O-LtD">
             <objects>
-                <viewController id="Koi-OH-H9e" sceneMemberID="viewController">
+                <viewController id="Koi-OH-H9e" customClass="DataViewController" customModule="GDG_VIT_Vellore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pe9-pX-cCT"/>
                         <viewControllerLayoutGuide type="bottom" id="tLB-3F-FE4"/>
@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ne1-Vg-nyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="591.20000000000005" y="-545.57721139430294"/>
+            <point key="canvasLocation" x="590.625" y="-546.12676056338034"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uTB-WA-xFp">

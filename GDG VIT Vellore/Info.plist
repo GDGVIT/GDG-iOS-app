@@ -47,7 +47,7 @@
         <false/>
         <key>NSExceptionDomains</key>
         <dict>
-            <key>blog.gdgvitvellore.com</key>
+            <key>gdgvitvellore.com</key>
             <dict>
                 <key>NSIncludesSubdomains</key>
                 <true/>

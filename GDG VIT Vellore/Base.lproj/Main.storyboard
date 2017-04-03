@@ -17,7 +17,7 @@
         <!--About Us-->
         <scene sceneID="AtH-kX-z5O">
             <objects>
-                <viewController id="Myy-TU-br1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Myy-TU-br1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nRC-O0-ACp"/>
                         <viewControllerLayoutGuide type="bottom" id="2NE-PQ-RDh"/>
@@ -51,6 +51,9 @@
                                         <real key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="IJH-Sd-EYq" kind="show" id="Fd0-ly-BLr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431372549018" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
@@ -101,6 +104,46 @@
             </objects>
             <point key="canvasLocation" x="592" y="111"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="TGm-Yd-VU2">
+            <objects>
+                <viewController id="IJH-Sd-EYq" customClass="WebViewController" customModule="GDG_VIT_Vellore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3dr-PG-N7E"/>
+                        <viewControllerLayoutGuide type="bottom" id="227-c3-30K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D7V-oo-lxG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSs-xj-gmJ">
+                                <rect key="frame" x="0.0" y="28" width="320" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4T-yk-YMe">
+                                <rect key="frame" x="16" y="466" width="288" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="VarelaRound" family="Varela Round" pointSize="31"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButton:" destination="IJH-Sd-EYq" eventType="touchUpInside" id="ADv-ww-cID"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="HSs-xj-gmJ" id="pwP-g7-AS0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySF-km-Dxq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959.375" y="1440.8450704225352"/>
+        </scene>
         <!--Events-->
         <scene sceneID="rvV-1O-LtD">
             <objects>
@@ -123,7 +166,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="uTB-WA-xFp">
             <objects>
-                <tabBarController id="snj-E9-Dtt" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="snj-E9-Dtt" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="E2x-kr-346">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

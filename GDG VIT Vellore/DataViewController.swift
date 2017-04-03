@@ -12,8 +12,11 @@ import SwiftyJSON
 
 class DataViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // Define a base URL for the API.
         let baseURL = "http://blog.gdgvitvellore.com:8000/"
@@ -92,6 +95,9 @@ class DataViewController: UIViewController {
                 }
                 
         }
+        
+        // Open up a WebView onClick "View Website" in About-Us section
+        
         
         // Do any additional setup after loading the view, typically from a nib.
         

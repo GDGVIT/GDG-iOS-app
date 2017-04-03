@@ -91,7 +91,10 @@
 				CDE6CDE51E92C2CF00D3733D /* VarelaRound-Regular.otf */,
 				CD1DAF771E8DA61E00FC701F /* ViewController.swift */,
 				CD1DAF791E8DA61E00FC701F /* Main.storyboard */,
+<<<<<<< HEAD
 				CD4FF0431E92F4CA00B48DC9 /* WebViewController.swift */,
+=======
+>>>>>>> bc0b9cd2c1ea4c759f4aaf4ced2db7b25732ca81
 				CDE6CDE61E92EFD500D3733D /* DataViewController.swift */,
 				CD1DAF871E8DAF8400FC701F /* TipInCellAnimator.swift */,
 				CD1DAF7C1E8DA61E00FC701F /* Assets.xcassets */,
